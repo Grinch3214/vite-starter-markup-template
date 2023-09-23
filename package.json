@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "browserslist": [
+    "cover 99.5%"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^10.4.4",
+    "imagemin": "^8.0.1",
+    "imagemin-webp": "^8.0.0",
+    "postcss-sort-media-queries": "^5.2.0",
+    "sass": "^1.68.0",
+    "vite": "^4.4.5"
+  }
+}
