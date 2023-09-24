@@ -1,20 +1,12 @@
+@import 'fonts';
+@import 'reset';
 @import 'mixins';
 
 body {
 	background: #000;
+	font-family: 'Montserrat';
 
 	@include viewport-sm {
 		background: darkblue;
-	}
-}
-
-.container {
-	display: flex;
-	display: grid;
-	background-clip: text;
-	color: red;
-
-	@include viewport-sm {
-		color: white;
 	}
 }
