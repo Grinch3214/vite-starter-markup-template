@@ -2,12 +2,6 @@
 @import 'reset';
 @import 'vars';
 @import 'mixins';
-
-body {
-	background: #000;
-	font-family: 'Montserrat';
-
-	@include viewport-sm {
-		background: darkblue;
-	}
-}
+@import 'global';
+@import 'switch';
+@import 'badges';

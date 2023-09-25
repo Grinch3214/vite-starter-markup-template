@@ -3,3 +3,9 @@
     @content;
   }
 }
+
+@mixin text-gradient {
+	background: var(--hero-name-background);
+	background-clip: text;
+	color: transparent;
+}

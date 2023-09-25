@@ -1,0 +1,30 @@
+html {
+	font-size: 10px;
+}
+body {
+	font-family: 'Montserrat';
+	background: var(--main-color);
+	color: var(--main-text-color);
+	font-size: 2.4rem;
+}
+
+.wrapper {
+	min-height: 100vh;
+	padding: 80px 100px;
+	text-align: center;
+}
+
+.dark {
+	color-scheme: dark;
+}
+
+.title {
+	font-size: 4rem;
+
+	span {
+		font-size: 5rem;
+		text-transform: uppercase;
+		font-weight: 700;
+		@include text-gradient;
+	}
+}

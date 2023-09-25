@@ -1,0 +1,38 @@
+.switch {
+	text-align: right;
+	&__box {
+		display: inline-block;
+		input {
+			position: absolute;
+			z-index: -1;
+			opacity: 0;
+			&:checked+label::before {
+				right: calc(100% - 25px);
+				background: var(--main-text-color);
+			}
+		}
+	
+		label {
+			display: inline-block;
+			cursor: pointer;
+			width: 60px;
+			height: 28px;
+			border-radius: 50px;
+			background: var(--mute-color);
+			box-shadow: inset 0 0 1px 1px var(--second-text-color);
+			position: relative;
+
+			&::before {
+				content: '';
+				position: absolute;
+				top: 3px;
+				right: 3px;
+				width: 22px;
+				height: 22px;
+				border-radius: 50%;
+				background: var(--second-color);
+				transition: all .3s ease;
+			}
+		}
+	}
+}
