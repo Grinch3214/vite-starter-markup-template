@@ -28,13 +28,11 @@ body {
 .title {
 	font-size: 4rem;
 
-	a {
-		display: inline-block;
+	span {
 		font-size: 5rem;
 		text-transform: uppercase;
 		font-weight: 700;
 		@include text-gradient;
-		text-decoration: none;
 	}
 }
 
