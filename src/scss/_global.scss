@@ -10,8 +10,15 @@ body {
 
 .wrapper {
 	min-height: 100vh;
-	padding: 80px 100px;
 	text-align: center;
+	display: flex;
+	flex-flow: column;
+}
+
+.container {
+	max-width: 1180px;
+	margin: 0 auto;
+	padding: 0 2rem;
 }
 
 .dark {
@@ -21,10 +28,26 @@ body {
 .title {
 	font-size: 4rem;
 
-	span {
+	a {
+		display: inline-block;
 		font-size: 5rem;
 		text-transform: uppercase;
 		font-weight: 700;
 		@include text-gradient;
+		text-decoration: none;
+	}
+}
+
+.footer {
+	padding: 3rem 0;
+	font-size: 1.6rem;
+
+	a {
+		text-decoration: none;
+		color: var(--brand-color);
+		transition: .2s ease;
+		&:hover {
+			color: var(--brand-light-color);
+		}
 	}
 }

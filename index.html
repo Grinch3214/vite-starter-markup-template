@@ -8,45 +8,51 @@
   </head>
   <body>
 		<div class="wrapper">
-			<div class="inner">
-				<div class="switch">
-					<div class="switch__box">
-						<input type="checkbox" id="switch">
-						<label for="switch"></label>
+			<div class="main">
+				<header class="main__header">
+					<div class="main__switch switch">
+						<div class="switch__box">
+							<input type="checkbox" id="switch">
+							<label for="switch"></label>
+						</div>
 					</div>
-				</div>
+				</header>
 
-				<picture>
-					<source srcset="/src/img/webp/logo-vite.webp" type="image/webp">
-					<img src="/src/img/logo-vite.png" alt="logo-vite" width="300" height="300">
-				</picture>
-
-				<h1 class="title"><span>Vite</span> <br>simple starter markup template</h1>
+				<div class="container">
+					<a class="main__logo" href="https://vitejs.dev/" target="_blank">
+						<picture>
+							<source srcset="/src/img/webp/logo-vite.webp" type="image/webp">
+							<img class="main__logo-img" src="/src/img/logo-vite.png" alt="logo-vite" width="300" height="300">
+						</picture>
+					</a>
 	
-				<ul class="badges">
-					<li>
-						<a href="https://www.npmjs.com/package/autoprefixer" target="_blank">autoprefixer</a>
-					</li>
-					<li>
-						<a href="https://www.npmjs.com/package/imagemin" target="_blank">imagemin</a>
-					</li>
-					<li>
-						<a href="https://www.npmjs.com/package/imagemin-webp" target="_blank">imagemin-webp</a>
-					</li>
-					<li>
-						<a href="https://www.npmjs.com/package/postcss-sort-media-queries" target="_blank">postcss-sort-media-queries</a>
-					</li>
-					<li>
-						<a href="https://sass-lang.com" target="_blank">SCSS</a>
-					</li>
-					<li>
-						<a href="#">CSS Reset</a>
-					</li>
-				</ul>
+					<h1 class="main__title title"><a href="https://vitejs.dev/" target="_blank">Vite</a> <br>simple starter markup template</h1>
+		
+					<ul class="main__badges badges">
+						<li class="badges__item">
+							<a class="badges__link" href="https://www.npmjs.com/package/autoprefixer" target="_blank">autoprefixer</a>
+						</li>
+						<li class="badges__item">
+							<a class="badges__link" href="https://www.npmjs.com/package/imagemin" target="_blank">imagemin</a>
+						</li>
+						<li class="badges__item">
+							<a class="badges__link" href="https://www.npmjs.com/package/imagemin-webp" target="_blank">imagemin-webp</a>
+						</li>
+						<li class="badges__item">
+							<a class="badges__link" href="https://www.npmjs.com/package/postcss-sort-media-queries" target="_blank">postcss-sort-media-queries</a>
+						</li>
+						<li class="badges__item">
+							<a class="badges__link" href="https://sass-lang.com" target="_blank">SCSS</a>
+						</li>
+						<li class="badges__item">
+							<a class="badges__link no-link" href="#">CSS Reset</a>
+						</li>
+					</ul>
+				</div>
 			</div>
-			<div class="footer">
-				Made with ❤ by <a href="#" target="_blank">Max</a>
-			</div>
+			<footer class="footer">
+				<div class="container">Made with ❤ by <a href="#" target="_blank">Max</a></div>
+			</footer>
 		</div>
 
     <script type="module" src="./src/js/main.js"></script>

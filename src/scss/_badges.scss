@@ -1,0 +1,28 @@
+.badges {
+	display: flex;
+	flex-flow: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+	margin: 3rem 0 5rem;
+
+	&__item {
+	}
+
+	&__link {
+		display: block;
+		border-radius: 5rem;
+		color: var(--main-text-color);
+		text-decoration: none;
+		background: var(--brand-color);
+		padding: 0.8rem 1.8rem;
+		transition: .2s ease;
+
+		&:hover {
+			background: var(--brand-light-color);
+		}
+	}
+}
+.no-link {
+	pointer-events: none;
+}
