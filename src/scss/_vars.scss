@@ -8,3 +8,10 @@
 	--brand-color: #646cff;
 	--brand-light-color: #747bff;
 }
+[data-theme="light"] {
+	--main-color: rgba(255, 255, 245, .86);
+	--second-color: #fff;
+	--mute-color: rgba(235, 235, 245, .6);
+	--main-text-color: #161618;
+	--second-text-color: #1e1e20;
+}
