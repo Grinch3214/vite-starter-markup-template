@@ -9,7 +9,7 @@ export default function switchThemeColor() {
 
   themeSwitch.addEventListener('change', event => {
 		event.target.checked ? setTheme(DARK) : setTheme(LIGHT)
-  });
+  })
 }
 
 function setThemeColor(boolean, themeColor) {
