@@ -6,6 +6,7 @@ body {
 	background: var(--main-color);
 	color: var(--main-text-color);
 	font-size: 2.4rem;
+	transition: background .2s ease, color .2s ease;
 }
 
 .wrapper {
