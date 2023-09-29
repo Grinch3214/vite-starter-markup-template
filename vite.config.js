@@ -10,20 +10,20 @@ export default defineConfig({
   plugins: [
 		ViteImageOptimizer({
 			png: {
-				quality: 80,
+				quality: 70,
 			},
 			jpeg: {
-				quality: 80,
+				quality: 70,
 			},
 			jpg: {
-				quality: 80,
+				quality: 70,
 			},
 		}),
     {
 			...imagemin(['./src/img/**/*.{jpg,png,jpeg}'], {
 				destination: './src/img/webp/',
 				plugins: [
-					imageminWebp({ quality: 50 })
+					imageminWebp({ quality: 70 })
 				]
 			}),
 			apply: 'serve',
