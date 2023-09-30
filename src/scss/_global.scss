@@ -1,5 +1,8 @@
 html {
-	font-size: 10px;
+	font-size: 8px;
+	@include viewport-md {
+		font-size: 10px;
+	}
 }
 body {
 	font-family: 'Montserrat';
