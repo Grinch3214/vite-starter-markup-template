@@ -9,6 +9,15 @@ import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 export default defineConfig({
   plugins: [
 		ViteImageOptimizer({
+			svg: {
+				plugins: [
+					'removeDoctype',
+					'removeXMLProcInst',
+					'minifyStyles',
+					'sortAttrs',
+					'sortDefsChildren',
+				],
+			},
 			png: {
 				quality: 70,
 			},
