@@ -6,8 +6,19 @@ import glob from 'fast-glob'
 import { fileURLToPath } from 'url'
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 
+// you can use our path for your project
+const rootPath = '/'
+// example: const rootPath = '/my-path/'
+
 export default defineConfig({
-  plugins: [
+	css: {
+		preprocessorOptions: {
+			scss: {
+				api: 'modern-compiler',
+			}
+		}
+	},
+	plugins: [
 		ViteImageOptimizer({
 			svg: {
 				plugins: [
@@ -28,7 +39,7 @@ export default defineConfig({
 				quality: 70,
 			},
 		}),
-    {
+		{
 			...imagemin(['./src/img/**/*.{jpg,png,jpeg}'], {
 				destination: './src/img/webp/',
 				plugins: [
@@ -37,15 +48,16 @@ export default defineConfig({
 			}),
 			apply: 'serve',
 		}
-  ],
+	],
 	build: {
-    rollupOptions: {
-      input: Object.fromEntries(
+		rollupOptions: {
+			input: Object.fromEntries(
 				glob.sync(['./*.html', './pages/**/*.html']).map(file => [
 					path.relative(__dirname, file.slice(0, file.length - path.extname(file).length)),
 					fileURLToPath(new URL(file, import.meta.url))
 				])
 			)
-    },
-  },
+		},
+	},
+	base: `${rootPath}`,
 })
