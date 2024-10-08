@@ -5,6 +5,7 @@ import { defineConfig } from 'vite'
 import glob from 'fast-glob'
 import { fileURLToPath } from 'url'
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
+import sass from 'sass';
 
 // you can use our path for your project
 const rootPath = '/'
@@ -14,7 +15,7 @@ export default defineConfig({
 	css: {
 		preprocessorOptions: {
 			scss: {
-				api: 'modern-compiler',
+				implementation: sass,
 			}
 		}
 	},
