@@ -11,13 +11,6 @@ const rootPath = '/'
 // example: const rootPath = '/my-path/'
 
 export default defineConfig({
-	css: {
-		preprocessorOptions: {
-			scss: {
-				silenceDeprecations: ['legacy-js-api'],
-			}
-		}
-	},
 	plugins: [
 		ViteImageOptimizer({
 			svg: {
@@ -37,7 +30,7 @@ export default defineConfig({
 			},
 			jpg: {
 				quality: 70,
-			},
+			}
 		}),
 		{
 			...imagemin(['./src/img/**/*.{jpg,png,jpeg}'], {

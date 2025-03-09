@@ -1,55 +1,57 @@
+@use "mixins" as m;
+
 html {
-	font-size: 8px;
-	@include viewport-md {
-		font-size: 10px;
-	}
+  font-size: 8px;
+  @include m.viewport-md {
+    font-size: 10px;
+  }
 }
 body {
-	font-family: 'Montserrat';
-	background: var(--main-color);
-	color: var(--main-text-color);
-	font-size: 2.4rem;
-	transition: background .2s ease, color .2s ease;
+  font-family: "Montserrat";
+  background: var(--main-color);
+  color: var(--main-text-color);
+  font-size: 2.4rem;
+  transition: background 0.2s ease, color 0.2s ease;
 }
 
 .wrapper {
-	min-height: 100vh;
-	text-align: center;
-	display: flex;
-	flex-flow: column;
+  min-height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-flow: column;
 }
 
 .container {
-	max-width: 1180px;
-	margin: 0 auto;
-	padding: 0 2rem;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .dark {
-	color-scheme: dark;
+  color-scheme: dark;
 }
 
 .title {
-	font-size: 4rem;
+  font-size: 4rem;
 
-	span {
-		font-size: 5rem;
-		text-transform: uppercase;
-		font-weight: 700;
-		@include text-gradient;
-	}
+  span {
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    @include m.text-gradient;
+  }
 }
 
 .footer {
-	padding: 3rem 0;
-	font-size: 1.6rem;
+  padding: 3rem 0;
+  font-size: 1.6rem;
 
-	a {
-		text-decoration: none;
-		color: var(--brand-color);
-		transition: .2s ease;
-		&:hover {
-			color: var(--brand-light-color);
-		}
-	}
+  a {
+    text-decoration: none;
+    color: var(--brand-color);
+    transition: 0.2s ease;
+    &:hover {
+      color: var(--brand-light-color);
+    }
+  }
 }

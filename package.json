@@ -12,15 +12,15 @@
     "cover 99.5%"
   ],
   "devDependencies": {
-    "autoprefixer": "^10.4.4",
-    "fast-glob": "^3.3.1",
-    "imagemin": "^8.0.1",
+    "autoprefixer": "^10.4.20",
+    "fast-glob": "^3.3.3",
+    "imagemin": "^9.0.1",
     "imagemin-webp": "^8.0.0",
     "postcss-sort-media-queries": "^5.2.0",
-    "sass": "^1.68.0",
-    "sharp": "^0.32.6",
-    "svgo": "^3.0.2",
-    "vite": "^4.4.5",
-    "vite-plugin-image-optimizer": "^1.1.7"
+    "sass": "^1.85.1",
+    "sharp": "^0.33.5",
+    "svgo": "^3.3.2",
+    "vite": "^6.2.1",
+    "vite-plugin-image-optimizer": "^1.1.8"
   }
 }
