@@ -1,8 +1,7 @@
-@import 'fonts';
-@import 'reset';
-@import 'vars';
-@import 'mixins';
-@import 'global';
-@import 'main';
-@import 'switch';
-@import 'badges';
+@use "fonts";
+@use "reset";
+@use "vars";
+@use "global";
+@use "main";
+@use "switch";
+@use "badges";
