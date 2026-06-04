@@ -14,6 +14,10 @@ body {
   transition: background 0.2s ease, color 0.2s ease;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .wrapper {
   min-height: 100vh;
   text-align: center;
@@ -27,9 +31,6 @@ body {
   padding: 0 2rem;
 }
 
-.dark {
-  color-scheme: dark;
-}
 
 .title {
   font-size: 4rem;

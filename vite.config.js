@@ -6,7 +6,9 @@ import glob from 'fast-glob'
 import { fileURLToPath } from 'url'
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 
-// you can use our path for your project
+const __dirname = path.dirname(fileURLToPath(import.meta.url))
+
+// you can use your path for your project
 const rootPath = '/'
 // example: const rootPath = '/my-path/'
 
@@ -33,13 +35,14 @@ export default defineConfig({
 			}
 		}),
 		{
-			...imagemin(['./src/img/**/*.{jpg,png,jpeg}'], {
-				destination: './src/img/webp/',
-				plugins: [
-					imageminWebp({ quality: 70 })
-				]
-			}),
+			name: 'webp-converter',
 			apply: 'serve',
+			async buildStart() {
+				await imagemin(['./src/img/**/*.{jpg,png,jpeg}'], {
+					destination: './src/img/webp/',
+					plugins: [imageminWebp({ quality: 70 })]
+				})
+			}
 		}
 	],
 	build: {
@@ -52,5 +55,5 @@ export default defineConfig({
 			)
 		},
 	},
-	base: `${rootPath}`,
+	base: rootPath,
 })

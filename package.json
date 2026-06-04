@@ -9,15 +9,16 @@
     "preview": "vite preview"
   },
   "browserslist": [
-    "cover 99.5%"
+    "last 2 versions",
+    "not dead"
   ],
   "devDependencies": {
-    "autoprefixer": "^10.4.20",
+    "autoprefixer": "^10.5.0",
     "fast-glob": "^3.3.3",
     "imagemin": "^9.0.1",
     "imagemin-webp": "^8.0.0",
     "postcss-sort-media-queries": "^5.2.0",
-    "sass": "^1.85.1",
+    "sass": "^1.100.0",
     "sharp": "^0.33.5",
     "svgo": "^3.3.2",
     "vite": "^6.2.1",
