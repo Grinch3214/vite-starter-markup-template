@@ -1,4 +1,5 @@
 :root {
+	color-scheme: dark;
 	--main-color: #1e1e20;
 	--second-color: #161618;
 	--mute-color: #313136;
@@ -9,6 +10,7 @@
 	--brand-light-color: #747bff;
 }
 [data-theme="light"] {
+	color-scheme: light;
 	--main-color: rgba(255, 255, 245, .86);
 	--second-color: #fff;
 	--mute-color: rgba(235, 235, 245, .6);

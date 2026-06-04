@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
@@ -29,27 +29,9 @@
 					<h1 class="main__title title"><span>Vite</span> <br>simple starter markup template</h1>
 		
 					<ul class="main__badges badges">
-						<li class="badges__item">
-							<a class="badges__link" href="https://www.npmjs.com/package/autoprefixer" target="_blank">autoprefixer</a>
-						</li>
-						<li class="badges__item">
-							<a class="badges__link" href="https://www.npmjs.com/package/imagemin" target="_blank">imagemin</a>
-						</li>
-						<li class="badges__item">
-							<a class="badges__link" href="https://www.npmjs.com/package/imagemin-webp" target="_blank">imagemin-webp</a>
-						</li>
-						<li class="badges__item">
-							<a class="badges__link" href="https://www.npmjs.com/package/postcss-sort-media-queries" target="_blank">postcss-sort-media-queries</a>
-						</li>
-						<li class="badges__item">
-							<a class="badges__link" href="https://sass-lang.com" target="_blank">SCSS</a>
-						</li>
-						<li class="badges__item">
-							<a class="badges__link" href="https://github.com/FatehAK/vite-plugin-image-optimizer" target="_blank">vite-plugin-image-optimizer</a>
-						</li>
-						<li class="badges__item">
-							<a class="badges__link no-link" href="#">CSS Reset</a>
-						</li>
+						{{#each badges}}
+							{{> badge}}
+						{{/each}}
 					</ul>
 				</div>
 			</div>

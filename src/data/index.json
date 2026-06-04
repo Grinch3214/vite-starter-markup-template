@@ -1,0 +1,24 @@
+{
+  "badges": [
+    {
+      "name": "autoprefixer",
+      "url": "https://www.npmjs.com/package/autoprefixer"
+    },
+    { "name": "imagemin", "url": "https://www.npmjs.com/package/imagemin" },
+    {
+      "name": "imagemin-webp",
+      "url": "https://www.npmjs.com/package/imagemin-webp"
+    },
+    {
+      "name": "postcss-sort-media-queries",
+      "url": "https://www.npmjs.com/package/postcss-sort-media-queries"
+    },
+    { "name": "SCSS", "url": "https://sass-lang.com" },
+    {
+      "name": "vite-plugin-image-optimizer",
+      "url": "https://github.com/FatehAK/vite-plugin-image-optimizer"
+    },
+    { "name": "handlebarsjs", "url": "https://handlebarsjs.com/guide" },
+    { "name": "CSS Reset", "url": null }
+  ]
+}
